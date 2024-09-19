@@ -1,0 +1,56 @@
+/*
+ * Copyright (c) 2022 Huawei Device Co., Ltd.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "material": {
+          "certpath": "C:\\Users\\lixinrui\\.ohos\\config\\openharmony\\auto_ohos_default_CustomCommonEvent_com.samples.customcommonevent.cer",
+          "storePassword": "0000001B72B7EFE742144DAD443D36EA43997A81731251E326E1B9B48A07E1391265085261BFF1B2AD6E4B",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B7BD22A6286A405D7AFC810613C8CF3873E315A797F5E9F11B66370412C648D5BE74754495C7D9C",
+          "profile": "C:\\Users\\lixinrui\\.ohos\\config\\openharmony\\auto_ohos_default_CustomCommonEvent_com.samples.customcommonevent.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\lixinrui\\.ohos\\config\\openharmony\\auto_ohos_default_CustomCommonEvent_com.samples.customcommonevent.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compileSdkVersion": 10,
+        "compatibleSdkVersion": 10,
+        "runtimeOS": "OpenHarmony"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
